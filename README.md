@@ -5,11 +5,11 @@ This web application leverages machine learning and is powered by Flask to provi
 
 # Screenshots of user interface :
 
-![Alt text](<Screenshot 2023-12-06 144937-Ayushi.png>)
-
  ![Alt text](<Screenshot 2023-12-06 144822.png>) 
  
  ![Alt text](<Screenshot 2023-12-06 144922.png>)
+
+ ![Alt text](<Screenshot 2023-12-06 144937-Ayushi.png>)
 
 
 # Data collection and training :
