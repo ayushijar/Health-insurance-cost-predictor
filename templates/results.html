@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #EEF1FD;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+        }
+
+        .home-info {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333F50;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333F50;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333F50;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333F50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-left: -46px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="home-info">
+                        <h1>Prediction Result !!</h1>
+                        <h2>The estimated medical insurance charge will be around {{predic}}</h2>
+                        <ul class="countdown">
+                            <h3>Thanks for using the application.</h3>
+                            <a href="/">Predict again</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

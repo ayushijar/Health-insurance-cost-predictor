@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EEF1FD;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+          color: #333F50;
+        }
+
+        form {
+            background-color: #D6DCE5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 380px;
+            text-align: center;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        select {
+            appearance: none;
+        }
+
+        input[type="submit"] {
+            background-color: #333F50;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form action="/predict" method='POST'>
+      <h1>Health insurance cost predictor</h1>
+        <input type="number" id="age" name="age" placeholder="Enter the Age" required="">
+        <select id="sex" name="sex" required="">
+            <option value="" selected data-default>Please select your sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br> 
+        <input type="text" id="bmi" name="bmi" placeholder="Enter your Body mass Index" required="">
+        <select id="child" name="child" required="">
+            <option value="" selected data-default>How many children do you have?</option>
+            <option value="0">None</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br></br>
+        <select id="smoke" name="smoke" required="">
+            <option value="" selected data-default>Do you smoke?</option>
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+        <select id="reg" name="reg" required="">
+            <option value="" selected data-default>Which region are you from?</option>
+            <option value="northwest">North West</option>
+            <option value="northeast">North East</option>
+            <option value="southwest">South West</option>
+            <option value="southeast">South East</option>
+        </select><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+
+</html>
