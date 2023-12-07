@@ -43,7 +43,7 @@ This web application leverages machine learning and is powered by Flask to provi
 
 # Results :
 
--  Model gave 86% accuracy for Medical Insurance Amount Prediction using Random Forest Regression.
+-  Model gave approximately 97% accuracy for Medical Insurance Amount Prediction using Random Forest Regression.
 
 ## :file_folder: Dataset
 The dataset used can be downloaded here (Kaggle) - [Click to Download](https://www.kaggle.com/mirichoi0218/insurance)
